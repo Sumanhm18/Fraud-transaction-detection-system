@@ -1,0 +1,166 @@
+/Users/sumanhm/Downloads/finance/backend/plaid_server.py:896: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/Users/sumanhm/Downloads/finance/backend/plaid_server.py:915: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [35190]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:63912 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63914 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63917 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63923 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63925 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63927 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63929 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:63930 - "WebSocket /ws/transactions" [accepted]
+🔐 Plaid Configuration:
+   Client ID: 6916faaef7ef3500202083a2
+   Environment: sandbox
+   Secret: ***bb0a
+🛡️ Starting FinSentinel AI - Plaid Production Server...
+🔗 API Documentation: http://localhost:8000/docs
+❤️ Health Check: http://localhost:8000/health
+🏦 Plaid Connection: http://localhost:8000/api/v1/connection_status
+📊 Frontend Dashboard: http://localhost:3000
+📡 Live Transactions: ws://localhost:8000/ws/transactions
+✅ Database initialized successfully
+🚀 FinSentinel AI Live Transaction Monitoring Started
+🔗 WebSocket endpoint: ws://localhost:8000/ws/transactions
+📡 Simulate transactions: POST /api/v1/simulate_transaction
+💾 Bulk save transactions: POST /api/v1/bulk_save_transactions
+📡 Broadcasted transaction to 8 clients
+INFO:     127.0.0.1:63977 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+📡 Broadcasted transaction to 8 clients
+INFO:     127.0.0.1:64017 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64380 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64384 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64392 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /health HTTP/1.1" 200 OK
+📡 Broadcasted transaction to 10 clients
+INFO:     127.0.0.1:64392 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64415 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64392 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64417 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64392 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64392 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64419 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64421 - "WebSocket /ws/transactions" [accepted]
+📡 Broadcasted transaction to 14 clients
+INFO:     127.0.0.1:64465 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64471 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64465 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64473 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64465 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64479 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64465 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64483 - "WebSocket /ws/transactions" [accepted]
+📡 Broadcasted transaction to 18 clients
+INFO:     127.0.0.1:64481 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64481 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64536 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64481 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64538 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64481 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64481 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64481 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64540 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64481 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64542 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64632 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64640 - "GET /api/v1/connection_status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64667 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64739 - "GET /health HTTP/1.1" 200 OK
+📡 Broadcasted transaction to 22 clients
+INFO:     127.0.0.1:64741 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64834 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64838 - "WebSocket /ws/transactions" [accepted]
+🔌 WebSocket disconnected. Active connections: 21
+🔌 WebSocket disconnected. Active connections: 20
+🔌 WebSocket disconnected. Active connections: 19
+🔌 WebSocket disconnected. Active connections: 18
+🔌 WebSocket disconnected. Active connections: 17
+🔌 WebSocket disconnected. Active connections: 16
+🔌 WebSocket disconnected. Active connections: 15
+🔌 WebSocket disconnected. Active connections: 14
+🔌 WebSocket disconnected. Active connections: 13
+🔌 WebSocket disconnected. Active connections: 12
+🔌 WebSocket disconnected. Active connections: 11
+🔌 WebSocket disconnected. Active connections: 10
+🔌 WebSocket disconnected. Active connections: 9
+🔌 WebSocket disconnected. Active connections: 8
+INFO:     127.0.0.1:64844 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64846 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64846 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+📡 Broadcasted transaction to 10 clients
+INFO:     127.0.0.1:64844 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64876 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64844 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64878 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64844 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64880 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:64844 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64882 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65067 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65071 - "WebSocket /ws/transactions" [accepted]
+🔌 WebSocket disconnected. Active connections: 13
+🔌 WebSocket disconnected. Active connections: 12
+INFO:     127.0.0.1:65077 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65077 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65117 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65119 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65117 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65121 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65123 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65125 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:65162 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65349 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49170 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:49174 - "WebSocket /ws/transactions" [accepted]
+🔌 WebSocket disconnected. Active connections: 17
+🔌 WebSocket disconnected. Active connections: 16
+🔌 WebSocket disconnected. Active connections: 15
+🔌 WebSocket disconnected. Active connections: 14
+🔌 WebSocket disconnected. Active connections: 13
+🔌 WebSocket disconnected. Active connections: 12
+INFO:     127.0.0.1:49184 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49184 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49184 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49213 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:49184 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49215 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:49184 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49184 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49217 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:49184 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49184 - "GET /api/v1/admin/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49219 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:49294 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49328 - "GET /health HTTP/1.1" 200 OK
+📡 Broadcasted transaction to 18 clients
+INFO:     127.0.0.1:49332 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49334 - "GET /api/v1/connection_status HTTP/1.1" 200 OK

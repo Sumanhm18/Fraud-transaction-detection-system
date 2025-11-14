@@ -1,0 +1,70 @@
+INFO:     Started server process [9592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:54216 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54218 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54224 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54228 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54235 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54237 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54243 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54245 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54247 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54257 - "WebSocket /ws/transactions" [accepted]
+🛡️ Starting FinSentinel AI Backend Server...
+🔗 API Documentation: http://localhost:8000/docs
+❤️ Health Check: http://localhost:8000/health
+📊 Demo Dashboard: http://localhost:3000
+INFO:     127.0.0.1:54281 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54322 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54324 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54330 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54330 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54330 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54330 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54332 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54977 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54980 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54983 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54984 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54996 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55000 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "GET /api/v1/transactions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55012 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55014 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55016 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55018 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55099 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55100 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55102 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55104 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55100 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55106 - "WebSocket /ws/transactions" [accepted]
+INFO:     127.0.0.1:55100 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55143 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
