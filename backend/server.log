@@ -1,70 +1,1628 @@
-INFO:     Started server process [9592]
+/Users/sumanhm/Downloads/finance/backend/demo_server.py:132: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [721]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     127.0.0.1:54216 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54218 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54224 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54228 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54235 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54237 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54243 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54245 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54247 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54257 - "WebSocket /ws/transactions" [accepted]
 🛡️ Starting FinSentinel AI Backend Server...
 🔗 API Documentation: http://localhost:8000/docs
 ❤️ Health Check: http://localhost:8000/health
 📊 Demo Dashboard: http://localhost:3000
-INFO:     127.0.0.1:54281 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54322 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54324 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54330 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54330 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54332 - "GET /api/v1/accounts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54332 - "GET /api/v1/accounts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54330 - "GET /api/v1/transactions HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54330 - "GET /api/v1/transactions HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54332 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54332 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54977 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54980 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:54983 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:54984 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54996 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55000 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/accounts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/accounts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55006 - "GET /api/v1/transactions HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55006 - "GET /api/v1/transactions HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55012 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55014 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54978 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55016 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:54978 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:55018 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55099 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55100 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55100 - "GET /api/v1/transactions?limit=1000 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55102 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55104 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55100 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55100 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55100 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:55106 - "WebSocket /ws/transactions" [accepted]
-INFO:     127.0.0.1:55100 - "GET /api/v1/admin/stats HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:55143 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52260 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52262 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52264 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52266 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52268 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52270 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52272 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52274 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52277 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52278 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52289 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52291 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52288 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52294 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52296 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52298 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52301 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52302 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:52286 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52286 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52286 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52324 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52288 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52318 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52331 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:52321 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52333 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52289 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52322 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52336 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52286 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52318 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52288 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52321 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52341 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52321 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52286 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52343 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52318 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52289 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52289 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52350 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:52289 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52321 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52352 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52321 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52318 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52286 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52366 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:52384 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52382 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52384 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52385 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52385 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52379 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52381 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52387 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52381 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52379 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52379 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52379 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52379 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52381 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52379 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52381 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52404 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52406 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52413 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52443 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52443 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52453 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52454 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52449 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52443 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52453 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52454 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52443 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52445 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52447 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52456 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52445 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52447 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "OPTIONS /api/v1/simulate_transaction HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:52470 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52491 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52490 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52489 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52451 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52500 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52501 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52494 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52498 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52496 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52529 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52535 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52529 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52535 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52539 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52529 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52535 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52539 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52531 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52532 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52534 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52541 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52531 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52532 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52534 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52566 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:52631 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:52639 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52640 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52640 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52640 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52633 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52646 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52640 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52633 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52633 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52633 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52642 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52633 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52658 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:52639 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52640 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52660 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52640 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52640 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52640 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52674 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:52638 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52676 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52678 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:52636 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "POST /api/v1/plaid/create_link_token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52694 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52696 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52703 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52722 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52638 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52757 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52759 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52757 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52759 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52769 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:52771 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:52774 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52776 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52778 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52797 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52799 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52801 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:52867 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52870 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52867 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52877 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52867 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52877 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52867 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:52869 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52872 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52874 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52879 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52869 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52872 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52867 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52869 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52867 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52872 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52895 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52897 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52899 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53019 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53018 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53019 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53018 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53146 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53143 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53145 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:53195 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53196 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53195 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53198 - "WebSocket /ws/alerts" [accepted]
+INFO:     127.0.0.1:53196 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:53192 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53194 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53192 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53194 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53200 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53217 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53219 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:53240 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53255 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53240 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53261 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53261 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53271 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53273 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:53275 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:53277 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53279 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53281 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:53261 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53261 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53298 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53300 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:53261 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53298 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:53301 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53261 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53301 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53296 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53295 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53303 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53240 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53296 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53295 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53313 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53315 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53317 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53323 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53325 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53328 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53330 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:53353 - "OPTIONS /api/v1/simulate_transaction HTTP/1.1" 200 OK
+⛓️ Transaction tx_1763170933583 recorded on Hyperledger Fabric (Channel: finsentinel-channel)
+INFO:     127.0.0.1:53353 - "POST /api/v1/simulate_transaction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53355 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53353 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53469 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53466 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53468 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53469 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53468 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53466 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53606 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53605 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53603 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53744 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53741 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53743 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53744 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53741 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53743 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53804 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53801 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53903 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53902 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53901 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53921 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53920 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53918 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:54004 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54004 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54004 - "POST /api/v1/plaid/create_link_token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54021 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54064 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54061 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54063 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54076 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54073 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54075 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54221 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54220 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54218 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54356 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54355 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54353 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54368 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54364 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54367 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54511 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54508 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54510 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54655 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54654 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54652 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55095 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55100 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55097 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55091 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55093 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55099 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:55273 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55281 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55283 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55273 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55284 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:55281 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55283 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55273 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55281 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55288 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55277 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55275 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55279 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55275 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55281 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55277 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55277 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55279 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55273 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55283 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55296 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55304 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55306 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55308 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:55314 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55320 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55323 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55314 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55324 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55320 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55323 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55314 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55320 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55319 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55326 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55316 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55317 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:55319 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55316 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55320 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55319 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55320 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55316 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55372 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55377 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55368 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55370 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55374 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55376 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55423 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55430 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55431 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55433 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55423 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55430 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55431 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55423 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55430 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55437 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55425 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55428 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55426 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55430 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55428 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55426 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55443 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55508 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55505 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55507 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55528 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55533 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55526 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55530 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55531 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55524 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55571 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55570 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55568 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55611 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55610 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55608 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:55626 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55636 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55637 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55626 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55634 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:55636 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55637 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55626 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55636 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55641 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55627 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55632 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55631 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55627 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55631 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55636 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55644 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55655 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55655 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55665 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55666 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55659 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55655 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55665 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55666 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55655 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55657 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55661 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55663 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55670 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55657 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55661 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55663 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55678 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55681 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55682 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55681 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55682 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55677 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55677 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55684 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55686 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:55675 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55677 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55677 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55682 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55677 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55675 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55695 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55691 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55694 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55699 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55701 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55707 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55712 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:55714 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:55716 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55718 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55720 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:55728 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55734 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55728 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55734 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55738 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55737 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55728 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:55734 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55738 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55740 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:55730 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:55731 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55733 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55730 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55731 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55733 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55742 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55744 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55746 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55756 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55758 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55760 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55762 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55777 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55774 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55776 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55793 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55792 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55790 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55803 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55800 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55802 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55825 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55826 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55817 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55823 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55819 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55821 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55868 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55867 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55891 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55890 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55888 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55923 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55922 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55920 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55941 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55938 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55940 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55961 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55967 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55957 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55958 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55964 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55965 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55984 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55983 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55981 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56005 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56002 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56004 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56021 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56020 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56018 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56037 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56036 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56034 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56051 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56056 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56061 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56053 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56058 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56060 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56089 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56086 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56088 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56179 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56169 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56172 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56178 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56175 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56172 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56169 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56172 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56169 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56294 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56294 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56294 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56300 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56291 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56293 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56298 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56299 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56293 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56291 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56293 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56291 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56371 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56371 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56375 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56365 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56368 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56369 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56371 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56373 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56365 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56369 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56365 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56369 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56517 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56523 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56517 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56517 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56513 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56519 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56515 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56522 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56513 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56515 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56513 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56515 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56613 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56611 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56609 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56615 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56613 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56611 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56613 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56618 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56609 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56615 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56611 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56609 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56675 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56669 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56671 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56667 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56677 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56674 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56675 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56671 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56675 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56667 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56671 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56667 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56721 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56720 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56721 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56723 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56720 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56726 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56723 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56720 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56721 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56718 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56752 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56756 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56754 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56756 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56758 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56760 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56752 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56762 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56756 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56764 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56752 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56764 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56814 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56810 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56804 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56808 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56812 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56809 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56804 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56809 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56804 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56809 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56859 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56864 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56859 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56859 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56863 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56856 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56860 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56855 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56855 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56856 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56855 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56856 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56963 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56969 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56963 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56963 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56966 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56959 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56961 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56968 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56959 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56961 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56959 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56961 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:57000 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57002 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57004 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57006 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57008 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57010 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57012 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57014 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57016 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57018 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57020 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57022 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57025 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57027 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57029 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57031 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57033 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57035 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57037 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57040 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57041 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57042 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57146 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57150 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57146 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57143 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57145 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57149 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57145 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57146 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57140 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57145 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:57278 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57280 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57282 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57284 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57287 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57289 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57291 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57293 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57295 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57297 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57299 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57301 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57303 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57306 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57308 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57310 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57312 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57314 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57316 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57318 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57319 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57320 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:57404 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57409 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57406 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57400 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57408 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57404 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57400 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57404 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57400 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57513 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57510 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57506 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57508 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57511 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57508 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57508 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57504 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57595 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57597 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57595 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57595 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57590 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57594 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57592 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57592 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57588 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57592 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57637 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57640 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57637 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57637 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57631 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57639 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57635 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57632 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57635 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57632 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57635 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57632 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57696 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57690 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57687 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57694 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57688 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57687 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57688 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57687 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57688 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57743 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57747 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57739 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57741 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57738 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57747 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57745 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57738 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57747 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57745 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57738 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57745 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57804 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57798 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57795 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57796 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57801 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57803 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57795 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57796 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57795 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57796 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57836 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57841 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57832 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57839 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57834 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57839 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57839 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57838 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57883 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57889 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57883 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57883 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57879 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57882 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57886 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57887 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57879 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57882 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57879 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57882 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57920 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57922 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57926 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57920 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57922 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57926 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57924 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57929 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57920 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57922 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57973 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57970 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57965 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57968 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57972 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57963 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57968 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57963 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57968 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57963 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58011 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58013 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58011 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58011 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58006 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58004 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58008 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58006 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58006 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58042 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58041 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58039 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58051 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58059 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:58051 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58061 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58062 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58051 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58053 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58057 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58055 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58053 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58055 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58057 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58053 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58053 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58061 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:58070 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58055 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58057 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58055 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58057 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58072 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58074 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58074 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58078 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58080 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58074 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58082 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58074 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58082 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58084 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58090 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58084 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58082 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58074 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58087 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58088 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58074 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58082 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58095 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58097 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58099 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58101 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58103 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58105 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58107 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:58109 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58109 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58118 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58121 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58120 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:58109 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:58118 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58121 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58109 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58112 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58114 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58116 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58123 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58112 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58114 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58116 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58125 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58127 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58129 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58133 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58135 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58137 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58139 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:58150 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58161 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58158 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:58150 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58160 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58161 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58152 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58154 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58155 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58165 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58152 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58154 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58155 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58155 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58161 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58155 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58161 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58160 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58155 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58170 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:58161 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58154 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58152 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58172 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58154 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58152 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58150 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58174 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58176 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:58178 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58180 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58182 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58184 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58186 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:58188 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58190 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58188 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58190 - "GET /api/v1/transactions?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58192 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58194 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58196 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58198 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58190 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58190 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58204 - "WebSocket /ws/transactions" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58206 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58208 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58216 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58218 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58219 - "WebSocket /ws/alerts" [accepted]
+INFO:     127.0.0.1:58216 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     connection open
+INFO:     127.0.0.1:58218 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58212 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58214 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58214 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58221 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58214 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58214 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58226 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58227 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58224 - "WebSocket /ws" [accepted]
+INFO:     127.0.0.1:58214 - "GET /health HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58226 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58227 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58214 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58212 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58218 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58216 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58229 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58212 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58218 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58216 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58231 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58233 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58235 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58242 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58241 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58239 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58260 - "OPTIONS /api/v1/simulate_transaction HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58264 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58264 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58273 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58266 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58270 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58266 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58270 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "OPTIONS /api/v1/simulate_transaction HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58280 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58277 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58279 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58285 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58289 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58288 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58285 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58289 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58295 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58288 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58291 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58294 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58310 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58307 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58309 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58312 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58312 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58312 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58317 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58312 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58316 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58316 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58319 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58316 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58316 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58316 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58321 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58321 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58321 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58321 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58329 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58329 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58340 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58340 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58340 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58340 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:58366 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58365 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58363 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58375 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58381 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58375 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58378 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58371 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58380 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58373 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58371 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58373 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58395 - "WebSocket /ws" [accepted]
+INFO:     connection closed
+INFO:     127.0.0.1:58398 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58407 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58398 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58407 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58398 - "GET /api/v1/agents/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "GET /api/v1/ws/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58411 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58400 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58403 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58401 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58406 - "GET /api/v1/accounts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58403 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58401 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58413 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58416 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:58423 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58425 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58426 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58423 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58426 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58428 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58422 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58420 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58422 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58420 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:58420 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58420 - "GET /api/v1/plaid/connection_status/demo_user HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58433 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58436 - "WebSocket /ws" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58438 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58440 - "OPTIONS /api/v1/plaid/create_link_token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58440 - "POST /api/v1/plaid/create_link_token HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58446 - "WebSocket /ws/alerts" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58453 - "POST /api/v1/auth/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58481 - "GET /api/v1/analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58480 - "GET /api/v1/fraud/alerts HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58479 - "GET /api/v1/transactions?limit=20 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     connection closed
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [721]

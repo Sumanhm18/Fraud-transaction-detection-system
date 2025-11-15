@@ -400,7 +400,10 @@ async def seed_demo_data():
                 "merchant_name": "Starbucks",
                 "category": ["Food and Drink", "Coffee Shop"],
                 "fraud_score": 0.05,
-                "risk_factors": []
+                "risk_factors": [],
+                "is_anomaly": False,
+                "anomaly_type": "NORMAL",
+                "status": "APPROVED"
             },
             {
                 "id": "tx_2",
@@ -409,7 +412,10 @@ async def seed_demo_data():
                 "merchant_name": "Best Buy",
                 "category": ["Electronics"],
                 "fraud_score": 0.75,
-                "risk_factors": ["High amount", "Unusual merchant"]
+                "risk_factors": ["High amount", "Unusual merchant"],
+                "is_anomaly": True,
+                "anomaly_type": "HIGH_RISK_FRAUD",
+                "status": "FLAGGED"
             },
             {
                 "id": "tx_3",
@@ -418,7 +424,10 @@ async def seed_demo_data():
                 "merchant_name": "Payroll Deposit",
                 "category": ["Deposit", "Payroll"],
                 "fraud_score": 0.01,
-                "risk_factors": []
+                "risk_factors": [],
+                "is_anomaly": False,
+                "anomaly_type": "NORMAL",
+                "status": "APPROVED"
             }
         ]
         
