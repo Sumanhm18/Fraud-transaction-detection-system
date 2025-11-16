@@ -320,9 +320,14 @@ const FraudMonitoring = () => {
                               <Typography variant="body2" color="text.secondary">
                                 {alert.message || 'Suspicious transaction detected'}
                               </Typography>
-                              <Typography variant="caption" color="text.secondary">
+                              <Typography variant="caption" color="text.secondary" display="block">
                                 Transaction ID: {alert.transaction_id}
                               </Typography>
+                              {alert.client_ip && (
+                                <Typography variant="caption" color="error.main" display="block" fontWeight="bold">
+                                  🌐 Device IP: {alert.client_ip}
+                                </Typography>
+                              )}
                             </Box>
                           }
                         />

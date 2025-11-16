@@ -392,11 +392,13 @@ async def seed_demo_data():
             await AccountDB.create_account(account)
         
         # Create demo transactions
+        from datetime import datetime, timedelta
         demo_transactions = [
             {
                 "id": "tx_1",
                 "account_id": "acc_1",
                 "amount": -85.50,
+                "date": (datetime.now() - timedelta(hours=2)).isoformat(),
                 "merchant_name": "Starbucks",
                 "category": ["Food and Drink", "Coffee Shop"],
                 "fraud_score": 0.05,
@@ -409,6 +411,7 @@ async def seed_demo_data():
                 "id": "tx_2",
                 "account_id": "acc_1", 
                 "amount": -1250.00,
+                "date": (datetime.now() - timedelta(hours=5)).isoformat(),
                 "merchant_name": "Best Buy",
                 "category": ["Electronics"],
                 "fraud_score": 0.75,
@@ -421,6 +424,7 @@ async def seed_demo_data():
                 "id": "tx_3",
                 "account_id": "acc_2",
                 "amount": 2500.00,
+                "date": (datetime.now() - timedelta(days=1)).isoformat(),
                 "merchant_name": "Payroll Deposit",
                 "category": ["Deposit", "Payroll"],
                 "fraud_score": 0.01,

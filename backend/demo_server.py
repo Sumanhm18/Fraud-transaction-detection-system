@@ -9,7 +9,7 @@ import asyncio
 import numpy as np
 from typing import List, Dict, Any, Set, Optional
 from datetime import datetime, timedelta
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, Header, Depends, status
+from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, Header, Depends, status, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -43,6 +43,7 @@ class Transaction(BaseModel):
     category: List[str] = []
     fraud_score: float = None
     risk_factors: List[str] = []
+    client_ip: Optional[str] = None  # IP address of device that created the transaction
 
 # Plaid integration models
 class LinkTokenRequest(BaseModel):
@@ -88,6 +89,7 @@ class FraudAlert(BaseModel):
     risk_factors: List[str]
     status: str
     created_at: datetime
+    client_ip: Optional[str] = None  # IP address of device that created the transaction
 
 # WebSocket connection manager
 class ConnectionManager:
@@ -753,13 +755,14 @@ async def simulate_transaction():
             print(f"⚠️ Blockchain recording failed: {bc_error}")
         
         # Create fraud alert if high risk
-        if new_transaction["fraud_score"] > 0.6:
+        if new_transaction["fraud_score"] > 0.1:
             fraud_alert = {
                 "id": f"alert_{datetime.now().strftime('%Y%m%d%H%M%S')}",
                 "transaction_id": new_transaction["id"],
                 "alert_type": "FRAUD_DETECTION",
                 "severity": "HIGH" if new_transaction["fraud_score"] > 0.7 else "MEDIUM", 
                 "message": f"Suspicious transaction detected: {', '.join(new_transaction['risk_factors'])}",
+                "client_ip": new_transaction.get("client_ip", "unknown"),  # Store client IP with alert
                 "is_resolved": False
             }
             
@@ -781,13 +784,25 @@ async def simulate_transaction():
             
             # Send email notification for fraud alert
             try:
-                await email_service.send_fraud_alert(
+                print(f"📧 Attempting to send fraud alert email for transaction {new_transaction['id']}")
+                print(f"   Fraud Score: {new_transaction['fraud_score']:.2%}")
+                print(f"   Severity: {fraud_alert['severity']}")
+                print(f"   Email Enabled: {email_service.enabled}")
+                print(f"   Recipient: {email_service.default_recipient}")
+                
+                email_sent = await email_service.send_fraud_alert(
                     alert=fraud_alert,
                     transaction=new_transaction
                 )
-                print(f"📧 Fraud alert email sent for transaction {new_transaction['id']}")
+                
+                if email_sent:
+                    print(f"✅ Fraud alert email sent successfully to {email_service.default_recipient}")
+                else:
+                    print(f"❌ Failed to send fraud alert email - check SMTP configuration")
             except Exception as email_error:
-                print(f"⚠️ Failed to send fraud alert email: {email_error}")
+                print(f"⚠️ Email service error: {email_error}")
+                import traceback
+                traceback.print_exc()
             
             # Broadcast fraud alert via WebSocket
             alert_message = json.dumps({
@@ -1181,9 +1196,15 @@ def calculate_fraud_score(transaction):
     return round(fraud_score, 3), risk_factors
 
 @app.post("/api/v1/manual_transaction")
-async def create_manual_transaction(transaction: ManualTransactionRequest):
+async def create_manual_transaction(transaction: ManualTransactionRequest, request: Request):
     """Create a new manual transaction entry"""
     try:
+        # Capture client IP address
+        client_ip = request.client.host if request.client else "unknown"
+        forwarded_for = request.headers.get("X-Forwarded-For")
+        if forwarded_for:
+            client_ip = forwarded_for.split(",")[0].strip()
+        
         # Calculate fraud score based on transaction characteristics
         fraud_score, risk_factors = calculate_fraud_score(transaction.dict())
         
@@ -1224,6 +1245,7 @@ async def create_manual_transaction(transaction: ManualTransactionRequest):
             "is_anomaly": is_anomaly,
             "anomaly_type": anomaly_type,
             "status": status,
+            "client_ip": client_ip,  # Store IP address
             "pending": False,
             "created_at": datetime.now().isoformat()
         }

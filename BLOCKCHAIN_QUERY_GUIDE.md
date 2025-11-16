@@ -1,6 +1,7 @@
 # 📋 Blockchain Transaction Query Guide
 
 ## Overview
+
 This guide explains how to view all transactions stored on the Hyperledger Fabric blockchain in FinSentinel AI.
 
 ---
@@ -8,6 +9,7 @@ This guide explains how to view all transactions stored on the Hyperledger Fabri
 ## 🎯 Quick Start
 
 ### Easiest Method: Backend API
+
 ```bash
 curl "http://localhost:8000/api/v1/blockchain/transactions/all" | jq .
 ```
@@ -19,11 +21,13 @@ curl "http://localhost:8000/api/v1/blockchain/transactions/all" | jq .
 ### Method 1: Backend API Endpoint (Recommended)
 
 **Get All Transactions:**
+
 ```bash
 curl "http://localhost:8000/api/v1/blockchain/transactions/all" | jq .
 ```
 
 **Response Format:**
+
 ```json
 {
   "success": true,
@@ -53,11 +57,13 @@ curl "http://localhost:8000/api/v1/blockchain/transactions/all" | jq .
 ```
 
 **Get Specific Transaction:**
+
 ```bash
 curl "http://localhost:8000/api/v1/blockchain/transaction/<TRANSACTION_ID>" | jq .
 ```
 
 **Get Blockchain Status:**
+
 ```bash
 curl "http://localhost:8000/api/v1/blockchain/status" | jq .
 ```
@@ -67,6 +73,7 @@ curl "http://localhost:8000/api/v1/blockchain/status" | jq .
 ### Method 2: Direct Peer CLI Command
 
 **Setup Environment (Org1):**
+
 ```bash
 cd /Users/sumanhm/Downloads/finance/fabric-samples/test-network
 
@@ -79,6 +86,7 @@ export FABRIC_CFG_PATH=${PWD}/../config/
 ```
 
 **Query All Transactions:**
+
 ```bash
 ../bin/peer chaincode query \
   -C finsentinel-channel \
@@ -87,6 +95,7 @@ export FABRIC_CFG_PATH=${PWD}/../config/
 ```
 
 **Query Specific Transaction:**
+
 ```bash
 ../bin/peer chaincode query \
   -C finsentinel-channel \
@@ -95,6 +104,7 @@ export FABRIC_CFG_PATH=${PWD}/../config/
 ```
 
 **Query High-Risk Transactions:**
+
 ```bash
 # Fraud score > 0.7
 ../bin/peer chaincode query \
@@ -108,6 +118,7 @@ export FABRIC_CFG_PATH=${PWD}/../config/
 ### Method 3: Using the Helper Script
 
 **Run the viewer script:**
+
 ```bash
 cd /Users/sumanhm/Downloads/finance
 ./view_blockchain_transactions.sh
@@ -120,6 +131,7 @@ This script displays all transactions with formatted output.
 ## 🔍 Advanced Queries
 
 ### Filter by Fraud Score
+
 ```bash
 # Get all transactions and filter by fraud score > 0.5
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
@@ -127,6 +139,7 @@ curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
 ```
 
 ### Filter by Date
+
 ```bash
 # Get transactions from a specific date
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
@@ -134,6 +147,7 @@ curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
 ```
 
 ### Filter by Merchant
+
 ```bash
 # Get transactions from specific merchant
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
@@ -141,6 +155,7 @@ curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
 ```
 
 ### Count Transactions by Risk Level
+
 ```bash
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
   jq '.transactions | group_by(.risk_level) | map({risk_level: .[0].risk_level, count: length})'
@@ -152,12 +167,12 @@ curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
 
 The `fraud-detector` chaincode provides these query functions:
 
-| Function | Description | Args |
-|----------|-------------|------|
-| `GetTransaction` | Get single transaction by ID | `[transaction_id]` |
-| `GetAllTransactions` | Get all transactions | `[]` |
+| Function                  | Description                            | Args                      |
+| ------------------------- | -------------------------------------- | ------------------------- |
+| `GetTransaction`          | Get single transaction by ID           | `[transaction_id]`        |
+| `GetAllTransactions`      | Get all transactions                   | `[]`                      |
 | `GetHighRiskTransactions` | Get transactions above fraud threshold | `[fraud_score_threshold]` |
-| `GetFraudAlert` | Get fraud alert by ID | `[alert_id]` |
+| `GetFraudAlert`           | Get fraud alert by ID                  | `[alert_id]`              |
 
 ---
 
@@ -166,6 +181,7 @@ The `fraud-detector` chaincode provides these query functions:
 Each transaction on the blockchain contains:
 
 - **Transaction Details:**
+
   - `id`: Unique transaction identifier
   - `account_id`: Account identifier
   - `amount`: Transaction amount
@@ -177,6 +193,7 @@ Each transaction on the blockchain contains:
   - `payment_method`: Payment method used
 
 - **ML Fraud Analysis:**
+
   - `fraud_score`: ML model fraud score (0-1)
   - `risk_level`: HIGH/MEDIUM/LOW
   - `risk_factors`: Array of detected risk factors
@@ -211,12 +228,14 @@ Each transaction on the blockchain contains:
 ## 🆘 Troubleshooting
 
 **"Connection refused" error:**
+
 ```bash
 # Check if Hyperledger Fabric network is running
 docker ps | grep -E "peer|orderer"
 ```
 
 **"Chaincode not found" error:**
+
 ```bash
 # Verify chaincode is deployed
 cd /Users/sumanhm/Downloads/finance/fabric-samples/test-network
@@ -224,6 +243,7 @@ cd /Users/sumanhm/Downloads/finance/fabric-samples/test-network
 ```
 
 **Empty result:**
+
 ```bash
 # Check if transactions are being recorded
 tail -f /Users/sumanhm/Downloads/finance/backend/server.log | grep "⛓️"
@@ -234,17 +254,19 @@ tail -f /Users/sumanhm/Downloads/finance/backend/server.log | grep "⛓️"
 ## 📝 Examples
 
 ### Example 1: View Summary of All Transactions
+
 ```bash
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
   jq '{
     total: .total,
-    by_risk_level: (.transactions | group_by(.risk_level) | 
+    by_risk_level: (.transactions | group_by(.risk_level) |
       map({risk: .[0].risk_level, count: length})),
     avg_fraud_score: (.transactions | map(.fraud_score) | add / length)
   }'
 ```
 
 ### Example 2: Find Anomalous Transactions
+
 ```bash
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
   jq '[.transactions[] | select(.is_anomaly == true) | {
@@ -257,6 +279,7 @@ curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
 ```
 
 ### Example 3: Recent Transactions
+
 ```bash
 curl -s "http://localhost:8000/api/v1/blockchain/transactions/all" | \
   jq '[.transactions | sort_by(.recorded_at) | reverse | .[0:10]]'

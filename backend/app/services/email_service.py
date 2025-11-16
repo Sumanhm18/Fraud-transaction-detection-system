@@ -195,14 +195,18 @@ class EmailService:
                 
                 server.sendmail(self.sender_email, recipient, message.as_string())
             
+            logger.info(f"✅ Email sent successfully to {recipient}")
             return True
             
         except Exception as e:
-            logger.error(f"SMTP send failed: error={str(e)}")
+            logger.error(f"❌ SMTP send failed: error={str(e)}")
+            logger.error(f"   SMTP Server: {self.smtp_server}:{self.smtp_port}")
+            logger.error(f"   Sender: {self.sender_email}")
+            logger.error(f"   Password configured: {bool(self.sender_password)}")
             # For development, just log the email content
-            logger.info(f"Email content preview: subject={subject}, recipient={recipient}")
-            # Return True for demo purposes (simulate successful send)
-            return True
+            logger.info(f"📧 Email content preview: subject={subject}, recipient={recipient}")
+            # Return False to indicate actual failure
+            return False
     
     def _create_fraud_alert_html(
         self,

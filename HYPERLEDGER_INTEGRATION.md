@@ -3,18 +3,21 @@
 ## ✅ What's Been Implemented
 
 ### 1. Hyperledger Fabric Test Network
+
 - **Status**: Running
 - **Network**: 2 Organizations (Org1, Org2), 1 Orderer
 - **Channel**: `finsentinel-channel`
 - **Docker Containers**: peer0.org1, peer0.org2, orderer.example.com
 
 ### 2. Fraud Detector Chaincode (Smart Contract)
+
 - **Language**: Go
 - **Chaincode Name**: `fraud-detector`
 - **Version**: 1.0
 - **Location**: `/Users/sumanhm/Downloads/finance/fabric-samples/chaincode/fraud-detector/go`
 
 #### Chaincode Functions:
+
 - `RecordTransaction` - Stores transaction with ML fraud detection results
 - `RecordFraudAlert` - Stores fraud alerts on blockchain
 - `GetTransaction` - Queries transaction from blockchain
@@ -24,14 +27,17 @@
 - `ResolveAlert` - Marks alert as resolved
 
 ### 3. Transaction Data Structure on Blockchain
+
 Every transaction recorded includes:
 
 **Transaction Details:**
+
 - ID, Account ID, Amount, Merchant Name
 - Category, Date, Transaction Type
 - Location, Payment Method
 
 **ML Model Results:**
+
 - `fraud_score` - Fraud detection score (0-1)
 - `risk_level` - HIGH/MEDIUM/LOW
 - `risk_factors` - List of detected risk factors
@@ -40,16 +46,19 @@ Every transaction recorded includes:
 - `anomaly_type` - Classification of anomaly
 
 **Blockchain Metadata:**
+
 - `recorded_at` - Timestamp
 - `recorded_by` - "FinSentinel-AI"
 - Immutable audit trail
 
 ### 4. Backend Integration
+
 - **Service**: `fabric_gateway.py` - Connects to Hyperledger Fabric via peer CLI
 - **Automatic Recording**: All simulated transactions are automatically stored on blockchain
 - **Fraud Alerts**: High-risk transactions (score > 0.6) trigger blockchain-recorded alerts
 
 ### 5. API Endpoints
+
 ```
 GET  /api/v1/blockchain/status
      → Returns Fabric network status
@@ -70,18 +79,19 @@ GET  /api/v1/blockchain/transaction/{transaction_id}
 ## 📊 What Gets Stored on Blockchain
 
 ### Every Transaction Includes:
+
 ```json
 {
   "id": "tx_4",
   "account_id": "acc_1",
-  "amount": -125.50,
+  "amount": -125.5,
   "merchant_name": "Amazon",
   "category": ["Shopping", "Online"],
   "date": "2025-11-15T06:10:23Z",
   "transaction_type": "debit",
   "location": "",
   "payment_method": "card",
-  
+
   // ML Model Results
   "fraud_score": 0.59,
   "risk_level": "MEDIUM",
@@ -89,7 +99,7 @@ GET  /api/v1/blockchain/transaction/{transaction_id}
   "ml_model_version": "ML-Model-v1.0",
   "is_anomaly": false,
   "anomaly_type": "NORMAL",
-  
+
   // Blockchain Metadata
   "recorded_at": "2025-11-15T06:10:24Z",
   "recorded_by": "FinSentinel-AI"
@@ -140,6 +150,7 @@ GET  /api/v1/blockchain/transaction/{transaction_id}
 ## 📝 Testing
 
 ### Test Transaction Recording:
+
 ```bash
 # Simulate transaction
 curl -X POST http://localhost:8000/api/v1/simulate_transaction
@@ -152,6 +163,7 @@ curl http://localhost:8000/api/v1/blockchain/transaction/tx_4
 ```
 
 ### Server Logs Show:
+
 ```
 ⛓️ Transaction tx_4 recorded on Hyperledger Fabric (Channel: finsentinel-channel)
 ```

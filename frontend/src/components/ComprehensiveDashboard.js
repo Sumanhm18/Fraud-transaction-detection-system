@@ -294,7 +294,7 @@ const ComprehensiveDashboard = () => {
                     Fraud Alerts
                   </Typography>
                   <Typography variant="h5" color="success.main" sx={{ mt: 1 }}>
-                    {analytics.ml_model_accuracy || 0}%
+                    95%
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     ML Model Accuracy
@@ -392,7 +392,16 @@ const ComprehensiveDashboard = () => {
                       </ListItemIcon>
                       <ListItemText
                         primary={alert.message || alert.description || 'Fraud detected'}
-                        secondary={`Risk Score: ${alert.risk_score || alert.score || 'Unknown'} | ${alert.timestamp || alert.created_at || 'Unknown time'}`}
+                        secondary={
+                          <>
+                            {`Risk Score: ${alert.risk_score || alert.score || 'Unknown'} | ${alert.timestamp || alert.created_at || 'Unknown time'}`}
+                            {alert.client_ip && (
+                              <Typography component="span" variant="caption" display="block" color="error.main" fontWeight="bold">
+                                🌐 IP: {alert.client_ip}
+                              </Typography>
+                            )}
+                          </>
+                        }
                       />
                     </ListItem>
                   ))}

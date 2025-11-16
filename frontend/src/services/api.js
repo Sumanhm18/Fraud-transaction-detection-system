@@ -1,4 +1,17 @@
-const API_BASE_URL = 'http://localhost:8000';
+// Automatically detect the API URL based on current hostname
+// Works on both localhost and network IP (e.g., 192.168.x.x)
+const getApiBaseUrl = () => {
+  // If custom API URL is set, use it
+  if (process.env.REACT_APP_API_URL) {
+    return process.env.REACT_APP_API_URL;
+  }
+  
+  // Otherwise, use same hostname as frontend with port 8000
+  const hostname = window.location.hostname;
+  return `http://${hostname}:8000`;
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 class APIService {
   // Health & Status
