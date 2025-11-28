@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# FinSentinel AI - Blockchain Startup Script
-# Starts Hyperledger Fabric network for fraud transaction recording
 
 set -e
 
