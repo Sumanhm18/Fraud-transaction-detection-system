@@ -1,6 +1,6 @@
 # FinSentinel AI - Autonomous Financial Intelligence & Trust System
 
-🚀 **AI-powered multi-agent system for real-time financial monitoring, fraud detection, and blockchain-verified audit trails**
+ **AI-powered multi-agent system for real-time financial monitoring, fraud detection, and blockchain-verified audit trails**
 
 ## Features
 
@@ -167,11 +167,3 @@ docker-compose -f docker-compose.prod.yml up -d
 # Kubernetes deployment
 kubectl apply -f k8s/
 ```
-
-## License
-
-MIT License - see LICENSE file for details.
-
----
-
-**Built with ❤️ for the future of autonomous financial intelligence**
